@@ -15,6 +15,7 @@
 		460DECE71E229A380057A068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460DECE51E229A380057A068 /* LaunchScreen.storyboard */; };
 		460DECF21E229A380057A068 /* WMCAAnimationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DECF11E229A380057A068 /* WMCAAnimationGroupTests.m */; };
 		460DECFD1E229A380057A068 /* WMCAAnimationGroupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DECFC1E229A380057A068 /* WMCAAnimationGroupUITests.m */; };
+		460DED0C1E229AC00057A068 /* WMGiftDetaultAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DED0B1E229AC00057A068 /* WMGiftDetaultAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		460DECF81E229A380057A068 /* WMCAAnimationGroupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMCAAnimationGroupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		460DECFC1E229A380057A068 /* WMCAAnimationGroupUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMCAAnimationGroupUITests.m; sourceTree = "<group>"; };
 		460DECFE1E229A380057A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460DED0A1E229AC00057A068 /* WMGiftDetaultAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGiftDetaultAnimationView.h; sourceTree = "<group>"; };
+		460DED0B1E229AC00057A068 /* WMGiftDetaultAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGiftDetaultAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				460DECDB1E229A380057A068 /* AppDelegate.m */,
 				460DECDD1E229A380057A068 /* ViewController.h */,
 				460DECDE1E229A380057A068 /* ViewController.m */,
+				460DED0A1E229AC00057A068 /* WMGiftDetaultAnimationView.h */,
+				460DED0B1E229AC00057A068 /* WMGiftDetaultAnimationView.m */,
 				460DECE01E229A380057A068 /* Main.storyboard */,
 				460DECE31E229A380057A068 /* Assets.xcassets */,
 				460DECE51E229A380057A068 /* LaunchScreen.storyboard */,
@@ -278,6 +283,7 @@
 				460DECDF1E229A380057A068 /* ViewController.m in Sources */,
 				460DECDC1E229A380057A068 /* AppDelegate.m in Sources */,
 				460DECD91E229A380057A068 /* main.m in Sources */,
+				460DED0C1E229AC00057A068 /* WMGiftDetaultAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
