@@ -15,7 +15,7 @@
 #define WS(wSelf)           __weak typeof(self) wSelf = self
 #define kColor_BGColor_blackColor  [UIColor colorWithHex:000000]
 
-
+#import <Masonry.h>
 
 
 @interface WMGiftDetaultAnimationView ()
@@ -65,32 +65,27 @@
     [self.bgAllView addSubview:self.gifImageView];
    
  
-//    [self.labCharmValue mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.bottom.equalTo(self.gifImageView.mas_top).offset(-40);
-//        make.centerX.equalTo(self.bgAllView.mas_centerX);
-//    }];
-//    [self.labName mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerX.equalTo(self.bgAllView.mas_centerX);
-//        make.centerY.equalTo(self.bgAllView.mas_centerY).offset(80);
-//        
-//    }];
-//    [self.btnFlowerLanguage mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.labName.mas_bottom).offset(12);
-//        make.centerX.equalTo(self.bgAllView.mas_centerX);
-//
-//    }];
-//    
-//    [self.bgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.equalTo(self.gifImageView);
-//        
-//        
-//    }];
-//    
-//    [self.btnDismiss mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.bgAllView).offset(100);
-//        make.left.equalTo(self.bgAllView.mas_left).offset(15);
-//        make.height.width.mas_equalTo(100);
-//    }];
+    [self.labCharmValue mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.gifImageView.mas_top).offset(-40);
+        make.centerX.equalTo(self.bgAllView.mas_centerX);
+    }];
+    [self.labName mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.bgAllView.mas_centerX);
+        make.centerY.equalTo(self.bgAllView.mas_centerY).offset(80);
+        
+    }];
+    [self.btnFlowerLanguage mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.labName.mas_bottom).offset(12);
+        make.centerX.equalTo(self.bgAllView.mas_centerX);
+
+    }];
+    
+    [self.bgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.gifImageView);
+        
+        
+    }];
+    
 
     [UIView animateWithDuration:1.5 animations:^{
           [self showAnimation];
@@ -179,6 +174,7 @@
 {
     if (!_bgAllView) {
         _bgAllView = [[UIView alloc] init];
+        _bgAllView.backgroundColor = [UIColor blackColor];
         _bgAllView.frame = CGRectMake(0, 0, CurrentWidth, CurrentHeight);
         _bgAllView.userInteractionEnabled = YES;
     }
@@ -234,7 +230,7 @@
 {
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     
-    [UIView animateWithDuration:1.5 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         [self showAnimation];
         
         self.bgImageView.alpha = 1.0;

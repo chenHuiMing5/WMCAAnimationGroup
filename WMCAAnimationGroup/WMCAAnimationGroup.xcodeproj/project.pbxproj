@@ -10,7 +10,6 @@
 		460DECD91E229A380057A068 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DECD81E229A380057A068 /* main.m */; };
 		460DECDC1E229A380057A068 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DECDB1E229A380057A068 /* AppDelegate.m */; };
 		460DECDF1E229A380057A068 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DECDE1E229A380057A068 /* ViewController.m */; };
-		460DECE21E229A380057A068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460DECE01E229A380057A068 /* Main.storyboard */; };
 		460DECE41E229A380057A068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460DECE31E229A380057A068 /* Assets.xcassets */; };
 		460DECE71E229A380057A068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460DECE51E229A380057A068 /* LaunchScreen.storyboard */; };
 		460DECF21E229A380057A068 /* WMCAAnimationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DECF11E229A380057A068 /* WMCAAnimationGroupTests.m */; };
@@ -43,7 +42,6 @@
 		460DECDB1E229A380057A068 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		460DECDD1E229A380057A068 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		460DECDE1E229A380057A068 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		460DECE11E229A380057A068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		460DECE31E229A380057A068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		460DECE61E229A380057A068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		460DECE81E229A380057A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				460DECDE1E229A380057A068 /* ViewController.m */,
 				460DED0A1E229AC00057A068 /* WMGiftDetaultAnimationView.h */,
 				460DED0B1E229AC00057A068 /* WMGiftDetaultAnimationView.m */,
-				460DECE01E229A380057A068 /* Main.storyboard */,
 				460DECE31E229A380057A068 /* Assets.xcassets */,
 				460DECE51E229A380057A068 /* LaunchScreen.storyboard */,
 				460DECE81E229A380057A068 /* Info.plist */,
@@ -282,7 +279,6 @@
 			files = (
 				460DECE71E229A380057A068 /* LaunchScreen.storyboard in Resources */,
 				460DECE41E229A380057A068 /* Assets.xcassets in Resources */,
-				460DECE21E229A380057A068 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,14 +390,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		460DECE01E229A380057A068 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				460DECE11E229A380057A068 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		460DECE51E229A380057A068 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -600,6 +588,7 @@
 				460DED031E229A380057A068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		460DED041E229A380057A068 /* Build configuration list for PBXNativeTarget "WMCAAnimationGroupTests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +597,7 @@
 				460DED061E229A380057A068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		460DED071E229A380057A068 /* Build configuration list for PBXNativeTarget "WMCAAnimationGroupUITests" */ = {
 			isa = XCConfigurationList;
@@ -616,6 +606,7 @@
 				460DED091E229A380057A068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
