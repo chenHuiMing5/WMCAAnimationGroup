@@ -16,6 +16,7 @@
 		460DECF21E229A380057A068 /* WMCAAnimationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DECF11E229A380057A068 /* WMCAAnimationGroupTests.m */; };
 		460DECFD1E229A380057A068 /* WMCAAnimationGroupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DECFC1E229A380057A068 /* WMCAAnimationGroupUITests.m */; };
 		460DED0C1E229AC00057A068 /* WMGiftDetaultAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 460DED0B1E229AC00057A068 /* WMGiftDetaultAnimationView.m */; };
+		B0AB5466CC6564050070FD85 /* libPods-WMCAAnimationGroup.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA25A080E132B397740A8EF7 /* libPods-WMCAAnimationGroup.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		460DECFE1E229A380057A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		460DED0A1E229AC00057A068 /* WMGiftDetaultAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGiftDetaultAnimationView.h; sourceTree = "<group>"; };
 		460DED0B1E229AC00057A068 /* WMGiftDetaultAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGiftDetaultAnimationView.m; sourceTree = "<group>"; };
+		81FFE8BDD41D26C02B92EA3D /* Pods-WMCAAnimationGroup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMCAAnimationGroup.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMCAAnimationGroup/Pods-WMCAAnimationGroup.release.xcconfig"; sourceTree = "<group>"; };
+		BB014C2079C414D00FF3B509 /* Pods-WMCAAnimationGroup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMCAAnimationGroup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMCAAnimationGroup/Pods-WMCAAnimationGroup.debug.xcconfig"; sourceTree = "<group>"; };
+		FA25A080E132B397740A8EF7 /* libPods-WMCAAnimationGroup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WMCAAnimationGroup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AB5466CC6564050070FD85 /* libPods-WMCAAnimationGroup.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,8 @@
 				460DECF01E229A380057A068 /* WMCAAnimationGroupTests */,
 				460DECFB1E229A380057A068 /* WMCAAnimationGroupUITests */,
 				460DECD51E229A380057A068 /* Products */,
+				52A664EAE46E74B26172533D /* Pods */,
+				876FBA948D6D50B2AE1ADF69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +152,23 @@
 			path = WMCAAnimationGroupUITests;
 			sourceTree = "<group>";
 		};
+		52A664EAE46E74B26172533D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB014C2079C414D00FF3B509 /* Pods-WMCAAnimationGroup.debug.xcconfig */,
+				81FFE8BDD41D26C02B92EA3D /* Pods-WMCAAnimationGroup.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		876FBA948D6D50B2AE1ADF69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA25A080E132B397740A8EF7 /* libPods-WMCAAnimationGroup.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 460DED011E229A380057A068 /* Build configuration list for PBXNativeTarget "WMCAAnimationGroup" */;
 			buildPhases = (
+				C944944C83F2911D6D679BC8 /* [CP] Check Pods Manifest.lock */,
 				460DECD01E229A380057A068 /* Sources */,
 				460DECD11E229A380057A068 /* Frameworks */,
 				460DECD21E229A380057A068 /* Resources */,
+				7FBA756F0732BF261DD5B8D4 /* [CP] Embed Pods Frameworks */,
+				0F6AC9C56B63FBA82AE9B84D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +301,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F6AC9C56B63FBA82AE9B84D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMCAAnimationGroup/Pods-WMCAAnimationGroup-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FBA756F0732BF261DD5B8D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMCAAnimationGroup/Pods-WMCAAnimationGroup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C944944C83F2911D6D679BC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		460DECD01E229A380057A068 /* Sources */ = {
@@ -430,6 +505,7 @@
 		};
 		460DED021E229A380057A068 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB014C2079C414D00FF3B509 /* Pods-WMCAAnimationGroup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -443,6 +519,7 @@
 		};
 		460DED031E229A380057A068 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FFE8BDD41D26C02B92EA3D /* Pods-WMCAAnimationGroup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

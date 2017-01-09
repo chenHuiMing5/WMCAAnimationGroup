@@ -1,0 +1,6 @@
+platform :ios, '7.0'
+target 'WMCAAnimationGroup' do
+pod "AFNetworking","3.0.4"
+pod 'Masonry', '~> 1.0.1’
+
+end    

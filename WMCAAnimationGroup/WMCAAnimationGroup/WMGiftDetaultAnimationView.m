@@ -122,7 +122,6 @@
     moveAnimation.fillMode = kCAFillModeForwards;
     
 //    moveAnimation.
-
     //放大图片动画
     CABasicAnimation* enlargeAnimation = [[CABasicAnimation alloc] init];
     enlargeAnimation.keyPath = @"transform.scale";
@@ -191,7 +190,6 @@
     if (!_bgImageView) {
         _bgImageView = [[UIImageView alloc] init];
         _bgImageView.image = [UIImage imageNamed:@"gift_bgImage"];
-        
         _bgImageView.alpha = 0.0;
     }
     return _bgImageView;
